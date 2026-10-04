@@ -4,6 +4,11 @@ The back office for cinema staff: daily figures, programme, films, bookings and 
 
 Angular 22, standalone components and signals, no UI library. Part of the [`templates-cinema`](https://github.com/mattoznav/templates-cinema) template, inside the [`templates`](https://github.com/mattoznav/templates) collection.
 
+## Requirements
+
+- Node.js 22.22 or newer (or 24.15+) and npm
+- The backend running locally (see its README)
+
 ## Quick start
 
 The admin needs the [backend](https://github.com/mattoznav/templates-cinema-backend) running on `http://localhost:8000`. In development every `/api` call is proxied there (`proxy.conf.json`), so there is no CORS to configure.
@@ -15,6 +20,8 @@ npm start
 
 Open `http://localhost:4200` and sign in with a staff account. To create one, set `DEMO_ADMIN_PASSWORD` in the backend's `.env` and run `manage.py load_data`, or run `manage.py createsuperuser`.
 Customer accounts are refused: only users with staff rights can sign in.
+
+Check the project with `npm run build`, which compiles it with strict type checking into `dist/`.
 
 ## Sections
 
