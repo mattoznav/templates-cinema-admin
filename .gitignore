@@ -26,3 +26,12 @@ service-account*.json
 
 # Agent local state
 .claude/settings.local.json
+
+# Angular
+/dist
+/out-tsc
+/node_modules
+/.angular/cache
+/coverage
+.sass-cache/
+npm-debug.log
