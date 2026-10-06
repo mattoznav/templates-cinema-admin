@@ -53,3 +53,7 @@ npm run build
 ```
 
 Serve `dist/cinema-admin/browser` from the same domain as the API (for example under `/admin/` with the API under `/api/`), or put both behind one reverse proxy.
+
+## License
+
+The code is released under the [MIT License](LICENSE).
